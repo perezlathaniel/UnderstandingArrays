@@ -23,9 +23,20 @@
 
             /*This is a more efficient way of declaring and initializing an array. By implicitly initializing the array, we let the 
              compiler decide how many elements are contained in int[] numbers at any given moment. */
-            int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+            //int[] numbers = new int[] { 1, 2, 3, 4, 5 };
 
+            //This declares an array of strings called "names" and initializes it to contain the 3 string elements specified. 
+            string[] names = new string[] { "Dalia", "Wayne", "Lathaniel" };
 
+            //This is an example of how to display elements of an array of strings.
+            //Console.WriteLine(names[0] + names[1] + names[2]);
+
+            //Real-world example of how arrays are manipulated using iteration loops. This example is a simple For iteration loop
+            for (int counter = 0; counter < names.Length; counter++)
+            {
+                Console.WriteLine(names[counter]);
+            }
+            
 
             Console.ReadKey();
         }
